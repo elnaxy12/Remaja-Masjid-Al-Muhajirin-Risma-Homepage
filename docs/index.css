@@ -1,0 +1,10 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
