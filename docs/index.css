@@ -2,9 +2,41 @@ body,
 html {
   margin: 0;
   padding: 0;
+  cursor: default;
+  background-color: var(--bg-color);
+  font-family: 'Dongle';
+}
+
+:root {
+  --bg-color: rgb(150, 167, 141);
+  --text-color: rgb(240, 240, 240);
 }
 
 .main-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-wrapper .galery .col1,
+.main-wrapper .galery .col2 {
+  display: flex;
+  justify-content: center;
+}
+
+.main-wrapper .galery .col1 p {
+  font-family: "Rock 3D";
+  font-size: 52px;
+  color: var(--text-color);
+}
+
+.main-wrapper .galery .col2 a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgb(182, 206, 180);
+  padding: 0px 10px;
+  font-size: 30px;
+}
+
+.main-wrapper .galery .col2 a:hover {
+  background-color: rgba(182, 206, 180, 0.5);
 }
