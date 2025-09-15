@@ -7,6 +7,10 @@ html {
   font-family: "Dongle";
 }
 
+footer {
+  background-color: var(--text-color);
+}
+
 :root {
   --bg-color: rgb(150, 167, 141);
   --text-color: rgb(240, 240, 240);
@@ -31,6 +35,7 @@ html {
 }
 
 .main-wrapper .galery .btn-menu a {
+  cursor: pointer;
   text-decoration: none;
   color: white;
   border: 1px solid rgb(182, 206, 180);
@@ -39,7 +44,17 @@ html {
 }
 
 .main-wrapper .galery .col2 a:hover {
-  background-color: rgba(182, 206, 180, 0.5);
+  background-color: white;
+  color: black;
+}
+
+.main-wrapper .galery .col2 a:active {
+  background-color: rgb(182, 206, 180);
+  color: white;
+}
+
+.main-wrapper .galery .hidden {
+  display: none;
 }
 
 .main-wrapper .galery .album-content {
