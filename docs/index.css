@@ -4,7 +4,7 @@ html {
   padding: 0;
   cursor: default;
   background-color: var(--bg-color);
-  font-family: 'Dongle';
+  font-family: "Dongle";
 }
 
 :root {
@@ -18,7 +18,7 @@ html {
 }
 
 .main-wrapper .galery .col1,
-.main-wrapper .galery .col2, 
+.main-wrapper .galery .col2,
 .main-wrapper .galery .col3 {
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@ html {
   margin-top: 3pc;
 }
 
-.main-wrapper .galery .album-content .col1, 
+.main-wrapper .galery .album-content .col1,
 .main-wrapper .galery .album-content .col2 {
   display: flex;
   flex-direction: row;
@@ -60,4 +60,46 @@ html {
   width: 250px;
   height: 260px;
   background-color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wrapper .galery .album-content .col1 .rotate8deg {
+  transform: rotate(8deg);
+}
+
+.main-wrapper .galery .album-content .col1 .rotate2deg {
+  transform: rotate(2deg);
+}
+
+.main-wrapper .galery .album-content .col1 .rotate-7deg {
+  transform: rotate(-7deg);
+}
+
+.main-wrapper .galery .album-content .col1 .rotate-3deg {
+  transform: rotate(-3deg);
+}
+
+.main-wrapper .galery .album-content .col1 .album img {
+  width: 230px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.main-wrapper .galery .album-content .col1 .album P {
+  margin: 0;
+}
+
+.main-wrapper .galery .album-content .col1 .album P.title {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 1pc;
+}
+
+.main-wrapper .galery .album-content .col1 .album P.description {
+  font-family: 'dancing script';
+  text-align: center;
+  font-size: 12px;
 }
