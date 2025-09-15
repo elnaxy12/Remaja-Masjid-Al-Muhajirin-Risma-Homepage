@@ -63,6 +63,13 @@ html {
 
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.main-wrapper .galery .album-content .col1 .album:hover,
+.main-wrapper .galery .album-content .col2 .album:hover {
+  transform: translateY(-10px);
 }
 
 .main-wrapper .galery .album-content .col1 .rotate8deg {
