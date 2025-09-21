@@ -165,6 +165,68 @@ footer {
 .main-wrapper .footer-galery .col1 {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.main-wrapper .footer-galery .col1 img {
+  width: 100%;
+  max-height: 116px;
+  object-fit: contain;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 0.8s ease;
+}
+
+.main-wrapper .footer-galery .col1 img.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.main-wrapper .footer-galery .col1 img.active-left {
+  transform: translateX(-30px);
+}
+
+.main-wrapper .footer-galery .col1 img.active-right {
+  transform: translateX(30px);
+}
+
+.main-wrapper .footer-galery .col1 button.btn-slider {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, background 0.3s ease;
+  z-index: 10;
+}
+
+.main-wrapper .footer-galery .col1 button.btn-slider svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.main-wrapper .footer-galery .col1 button.btn-slider:hover {
+  transform: translateY(-50%) scale(1.1);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.main-wrapper .footer-galery .col1 button.btn-slider.left {
+  left: 10px;
+}
+
+.main-wrapper .footer-galery .col1 button.btn-slider.right {
+  right: 10px;
 }
 
 .main-wrapper .footer-galery .col1 p {
@@ -173,15 +235,14 @@ footer {
   margin: 11px 0px;
 }
 
-.main-wrapper .footer-galery .col1 img {
-  width: 200px;
-  height: 50px;
-  object-fit: cover;
-}
-
 .main-wrapper .footer-galery .col2 {
   text-align: center;
   align-items: center;
+}
+
+.main-wrapper .footer-galery .col2 .col2-1 {
+  display: flex;
+  flex-direction: row;
 }
 
 .main-wrapper .footer-galery .col2 a {
@@ -191,14 +252,14 @@ footer {
   width: 20%;
 }
 
-.main-wrapper .footer-galery .col2 a::after{
+.main-wrapper .footer-galery .col2 a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px; 
+  bottom: -2px;
   width: 0;
   height: 1px;
-  background: black; 
+  background: black;
   transition: width 0.3s ease;
 }
 
@@ -217,13 +278,37 @@ footer {
   gap: 10px;
 }
 
+.main-wrapper .footer-galery .col4 {
+  justify-content: center;
+  align-items: center;
+  margin-top: 1pc;
+}
+
+.main-wrapper .footer-galery .col4 p {
+  margin: 0;
+}
+
+.main-wrapper .footer-galery .col4 p.address-mosque {
+  text-align: justify;
+  width: 213px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.main-wrapper .footer-galery .col4 .col4-1 {
+  width: 100px;
+  height: 100px;
+  background: url("assets/ico/hassan-mosque-svgrepo-com.svg") no-repeat center;
+  background-size: contain;
+  background-position: center;
+}
+
 .main-footer {
   display: flex;
   height: 25px;
   justify-content: center;
   align-items: center;
   background-color: var(--text-color);
-  border-top: 1px solid rgba(0, 0, 0);
 }
 
 .main-footer p {
